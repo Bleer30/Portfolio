@@ -1,0 +1,16 @@
+body {
+   background: #16BFFD;
+   background: -moz-linear-gradient(bottom left, #16BFFD 0%, #CB3066 100%);
+   background: -o-linear-gradient(bottom left, #16BFFD 0%, #CB3066 100%);
+   background: linear-gradient(to top right, #16BFFD 0%, #CB3066 100%);
+}
+
+h2 {
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    text-align: center;
+    color: #fff;
+}
