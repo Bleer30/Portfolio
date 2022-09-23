@@ -1,16 +1,51 @@
 body {
-   background: #16BFFD;
-   background: -moz-linear-gradient(bottom left, #16BFFD 0%, #CB3066 100%);
-   background: -o-linear-gradient(bottom left, #16BFFD 0%, #CB3066 100%);
-   background: linear-gradient(to top right, #16BFFD 0%, #CB3066 100%);
+    background: #343a40;
 }
 
 h2 {
     text-align: center;
-    color: #fff;
+    color: white;
 }
 
 p {
     text-align: center;
-    color: #fff;
+    color: white;
+}
+
+button,
+input,
+textarea {
+    font-family: 30px;
+    font-size: 60px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    display: inline-block;
+    background-color: #fff;
 }
