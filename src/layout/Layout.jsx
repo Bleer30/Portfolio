@@ -1,4 +1,4 @@
-import { Outlet, Link, useLocation } from 'react-router-dom';
+import { Outlet, Link, useLocation, NavLink } from 'react-router-dom';
 
 const Layout = () => {
   const location = useLocation();
@@ -14,38 +14,38 @@ const Layout = () => {
           <div className="nav__menu">
             <ul className="nav__list grid">
               <li className="nav__item">
-                <a href="/home" className="nav__link">
+                <NavLink to="/home" className="nav__link">
                   <i className="uil uil-home uil__icon"></i> Home
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav__item">
-                <a href="/about" className="nav__link">
+                <NavLink to="/about" className="nav__link">
                   <i className="uil uil-user uil__icon"></i> About
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav__item">
-                <a href="/skills" className="nav__link">
+                <NavLink to="/skills" className="nav__link">
                   <i className="uil uil-file-alt uil__icon"></i> Skills
-                </a>
+                </NavLink>
               </li>
               <li className="nav__item">
-                <a href="/resume" className="nav__link">
+                <NavLink to="/resume" className="nav__link">
                   <i className="uil uil-briefcase-alt uil__icon"></i> Services
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav__item">
-                <a href="#portafolio" className="nav__link">
+                <NavLink to="#portafolio" className="nav__link">
                   <i className="uil uil-scenery uil__icon"></i> Portfolio
-                </a>
+                </NavLink>
               </li>
 
               <li className="nav__item">
-                <a href="/contact" className="nav__link">
+                <NavLink to="/contact" className="nav__link">
                   <i className="uil uil-message uil__icon"></i> Contact
-                </a>
+                </NavLink>
               </li>
             </ul>
 
