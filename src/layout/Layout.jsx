@@ -20,7 +20,7 @@ const Layout = () => {
               </li>
 
               <li className="nav__item">
-                <a href="/About" className="nav__link">
+                <a href="/about" className="nav__link">
                   <i className="uil uil-user uil__icon"></i> About
                 </a>
               </li>
