@@ -37,7 +37,7 @@
 }
 
 .home-img {
-    background: url(./src/images/evangelion.png);
+    background: url(./images/evangelion.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
