@@ -7,9 +7,7 @@ const Layout = () => {
     <>
       <header className="header">
         <nav className="nav container">
-          <a href="index.html" className="nav__logo">
-            Bleer Rodriguez B.
-          </a>
+          <h1 className="name">Bleer Rodriguez B.</h1>
 
           <div className="nav__menu">
             <ul className="nav__list grid">
