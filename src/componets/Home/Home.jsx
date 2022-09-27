@@ -11,7 +11,7 @@ const Home = () => {
           <div className="home-content">
             <Social />
 
-            <div className="home-img"></div>
+            <img src="./images/evangelion.png" alt="" className="home-img" />
 
             <Data />
           </div>
