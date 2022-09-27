@@ -7,7 +7,7 @@ import './layout/Layout.css';
 import Resume from './componets/Resume';
 import Contact from './componets/Contact';
 import Home from './componets/Home/Home';
-import About from './componets/About';
+import About from './componets/About/About';
 import Skills from './componets/Skills';
 
 function App() {
