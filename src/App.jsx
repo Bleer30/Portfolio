@@ -8,7 +8,7 @@ import Resume from './componets/Resume';
 import Contact from './componets/Contact';
 import Home from './componets/Home/Home';
 import About from './componets/About/About';
-import Skills from './componets/Skills';
+import Skills from './componets/Skills/Skills';
 
 function App() {
   const [count, setCount] = useState(0);
