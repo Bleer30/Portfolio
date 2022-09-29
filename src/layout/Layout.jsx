@@ -10,7 +10,7 @@ const Layout = () => {
           <h1 className="name">Bleer Rodriguez B.</h1>
 
           <div className="nav__menu">
-            <ul className="nav__list grid">
+            <ul className="nav__list">
               <li className="nav__item">
                 <NavLink to="/home" className="nav__link">
                   <i className="uil uil-home uil__icon"></i> Home

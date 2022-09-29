@@ -33,6 +33,7 @@ img {
 }
 
 .about-box {
+    background: #fff;
     border: 1px solid black;
     border-radius: 0.75rem;
     text-align: center;

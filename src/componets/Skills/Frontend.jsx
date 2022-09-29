@@ -8,16 +8,15 @@ const Frontend = () => {
       <div className="skills-box">
         <div className="skills-group">
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
+            <div>
+              <h3 className="skills-name">HTML</h3>
+              <span className="skills-level">Basic</span>
+            </div>
           </div>
 
           <div className="skills-data">
-            <h3 className="skills-name">HTML</h3>
-            <span className="skills-level">Basic</span>
-          </div>
-
-          <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills-name">CSS</h3>
               <span className="skills-level">Advanced</span>
@@ -25,7 +24,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills-name">JavaScript</h3>
               <span className="skills-level">Intermediate</span>
@@ -33,7 +32,15 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
+            <div>
+              <h3 className="skills-name">Bootstrap</h3>
+              <span className="skills-level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills-data">
+            <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills-name">Git</h3>
               <span className="skills-level">Intermediate</span>
@@ -41,7 +48,7 @@ const Frontend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
             <div>
               <h3 className="skills-name">React</h3>
               <span className="skills-level">Intermediate</span>

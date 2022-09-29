@@ -3,12 +3,12 @@ import React from 'react';
 const Backend = () => {
   return (
     <div className="skills-content">
-      <h3 className="skillis-title">Backend Developer</h3>
+      <h3 className="skills-title">Backend Developer</h3>
 
       <div className="skills-box">
         <div className="skills-group">
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skillis-name">PHP</h3>
@@ -17,7 +17,7 @@ const Backend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skillis-name">Node Js</h3>
@@ -26,7 +26,7 @@ const Backend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skillis-name">Python</h3>
@@ -35,7 +35,7 @@ const Backend = () => {
           </div>
 
           <div className="skills-data">
-            <i class="bx bx-badge-check"></i>
+            <i className="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skillis-name">MySQL</h3>
@@ -43,8 +43,8 @@ const Backend = () => {
             </div>
           </div>
 
-          <div>
-            <i class="bx bx-badge-check"></i>
+          <div className="skills-data">
+            <i className="bx bxs-badge-check"></i>
 
             <div>
               <h3 className="skillis-name">Firebase</h3>

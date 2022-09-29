@@ -1,13 +1,53 @@
 .skills-container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    padding-top: 4rem;
+    column-gap: 2rem;
+    align-items: center;
+    row-gap: 5rem;
     justify-content: center;
 }
 
 .skills-content {
-    background-color: aliceblue;
+    background: #fff;
     border: 1px solid black;
-    padding: 2rem 4rem;
-    border-radius: 1.25rem;
+    border-radius: 0.75rem;
     text-align: center;
+    padding: 1rem 1.25rem;
+    width: 400px;
+    height: 600px;
+}
+
+.skills-title {
+    font-size: 2rem;
+    font-weight: 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-box {
+    display: flex;
+    justify-content: center;
+    row-gap: 5rem;
+}
+
+.skills-group {
+    display: grid;
+    align-items: flex-start;
+    row-gap: 1rem;
+}
+
+.skills-data {
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.skills-name {
+    font-size: 1rem;
+    font-weight: 1.5rem;
+    line-height: 18px;
+}
+
+.skills-level {
+    font-size: 1rem;
 }
