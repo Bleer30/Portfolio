@@ -9,6 +9,7 @@ import Contact from './componets/Contact';
 import Home from './componets/Home/Home';
 import About from './componets/About/About';
 import Skills from './componets/Skills/Skills';
+import Services from './componets/services/Services';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +23,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/services" element={<Services />} />
         </Route>
       </Routes>
     </Router>

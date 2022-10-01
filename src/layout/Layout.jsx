@@ -29,13 +29,13 @@ const Layout = () => {
                 </NavLink>
               </li>
               <li className="nav__item">
-                <NavLink to="/resume" className="nav__link">
+                <NavLink to="/services" className="nav__link">
                   <i className="uil uil-briefcase-alt uil__icon"></i> Services
                 </NavLink>
               </li>
 
               <li className="nav__item">
-                <NavLink to="#portafolio" className="nav__link">
+                <NavLink to="/resume" className="nav__link">
                   <i className="uil uil-scenery uil__icon"></i> Portfolio
                 </NavLink>
               </li>
