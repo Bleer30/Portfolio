@@ -1,4 +1,5 @@
 import { Outlet, Link, useLocation, NavLink } from 'react-router-dom';
+import './Layout.css';
 
 const Layout = () => {
   const location = useLocation();
