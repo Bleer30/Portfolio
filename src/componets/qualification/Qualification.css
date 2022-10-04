@@ -1,0 +1,12 @@
+.qualification-container {
+    max-width: 768px;
+}
+
+.qualiification-tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+}
+.qualification-button {
+    font-size: 1;
+}
