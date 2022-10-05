@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Services.css';
 
 const Services = () => {
+  const [toggleState, setToggleState] = useState(0);
+
+  const toggleTab = index => {
+    setToggleState(index);
+  };
+
   return (
     <section className="services section" id="services">
       <h2 className="section-title">Services</h2>

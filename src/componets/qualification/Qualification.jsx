@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Qualification.css';
 
 const Qualification = () => {
+  const [toggleState, setToggleState] = useState(1);
+
+  const toggleTab = index => {
+    setToggleState(index);
+  };
+
   return (
     <section>
-      <h2 className="section-title">Services</h2>
+      <h2 className="section-title">Qualification</h2>
       <span className="section-subtitle">My personal journey</span>
 
       <div className="qualification-container container">
         <div className="qualiification-tabs">
-          <div className="qualification-button qualification-active button--flex">
+          <div
+            className={
+              toggleState === 1
+                ? 'qualification-button qualification-active button--flex'
+                : 'qualification-button button--flex'
+            }
+          >
             <i className="uil uil-graduation-cap qualification-icon"></i>{' '}
             Education
           </div>
