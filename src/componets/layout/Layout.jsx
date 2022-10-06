@@ -1,57 +1,61 @@
+import { useState } from 'react';
 import { Outlet, Link, useLocation, NavLink } from 'react-router-dom';
 import './Layout.css';
 
 const Layout = () => {
   const location = useLocation();
-
+  const [Toggle, show] = useState(false);
   return (
     <>
       <header className="header">
         <nav className="nav container">
-          <h1 className="name">Bleer Rodriguez B.</h1>
+          <h1 className="nav__logo">Bleer Rodriguez B.</h1>
 
-          <div className="nav__menu">
-            <ul className="nav__list">
+          <div className={Toggle ? 'nav__menu show-mwnu' : 'nav__menu'}>
+            <ul className="nav__list grid">
               <li className="nav__item">
-                <NavLink to="/home" className="nav__link">
-                  <i className="uil uil-home uil__icon"></i> Home
+                <NavLink to="/home" className="nav__link active-link">
+                  <i className="uil uil-home nav__icon"></i> Home
                 </NavLink>
               </li>
 
               <li className="nav__item">
                 <NavLink to="/about" className="nav__link">
-                  <i className="uil uil-user uil__icon"></i> About
+                  <i className="uil uil-user nav__icon"></i> About
                 </NavLink>
               </li>
 
               <li className="nav__item">
                 <NavLink to="/skills" className="nav__link">
-                  <i className="uil uil-file-alt uil__icon"></i> Skills
+                  <i className="uil uil-file-alt nav__icon"></i> Skills
                 </NavLink>
               </li>
               <li className="nav__item">
                 <NavLink to="/services" className="nav__link">
-                  <i className="uil uil-briefcase-alt uil__icon"></i> Services
+                  <i className="uil uil-briefcase-alt nav__icon"></i> Services
                 </NavLink>
               </li>
 
               <li className="nav__item">
                 <NavLink to="/resume" className="nav__link">
-                  <i className="uil uil-scenery uil__icon"></i> Portfolio
+                  <i className="uil uil-scenery nav__icon"></i> Portfolio
                 </NavLink>
               </li>
 
               <li className="nav__item">
                 <NavLink to="/contact" className="nav__link">
-                  <i className="uil uil-message uil__icon"></i> Contact
+                  <i className="uil uil-message nav__icon"></i> Contact
                 </NavLink>
               </li>
             </ul>
 
-            <i className="uil uil-times nav-close"></i>
+            <i
+              className="uil uil-times nav-close"
+              onClick={() => showMenu(!Toggle)}
+            ></i>
           </div>
 
-          <div className="nav-toggle">
+          <div className="nav-toggle" onClick={() => showMenu(!Toggle)}>
             <i className="uil uil-apps"></i>
           </div>
         </nav>
