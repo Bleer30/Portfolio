@@ -43,5 +43,121 @@
 }
 
 .services-modal {
- display: none;   
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
 }
+
+.services-modal-content {
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.services-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.Services-modal-tile,
+.services-modal-description {
+    text-align: center;
+}
+
+.Services-modal-tile {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.services-modal-description {
+    font-size: var(--small-font-size);
+    padding: 0 3.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.services-modal-services {
+    row-gap: 0.75rem;
+}
+
+.services-modal-service {
+    display: flex;
+    align-items: center;
+    column-gap: .5rem;
+}
+
+.services-modal-icon {
+    color: var(--title-color);
+    font-size: 1.1rem;
+}
+
+.services-modal-info {
+    font-size: var(--small-font-size);
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .services-container{
+        grid-template-columns: repeat(3, 218px);
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-content {
+        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    }
+
+    .services-icon {
+        font-size: 1.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .services-modal-content {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    .services-modal-description {
+        padding: 0;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .services_container {
+        grid-template-columns: max-content;
+    }
+
+    .services-content {
+        padding-right: 6rem;
+    }
+  }

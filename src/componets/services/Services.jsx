@@ -22,15 +22,24 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services-button">
+          <span className="services-button" onClick={() => toggleTab(1)}>
             View More
             <i className="uil uil-arrow-right services-button-icon"></i>
             <div className="services-modal"></div>
           </span>
 
-          <div className="services-modal">
+          <div
+            className={
+              toggleState === 1
+                ? 'services-modal active-modal'
+                : 'services-modal'
+            }
+          >
             <div className="services-modal-content">
-              <i className="uil uil-times services-modal-close"></i>
+              <i
+                className="uil uil-times services-modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
 
               <h3 className="Services-modal-tile">
                 Product <br /> Designer
@@ -94,15 +103,24 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services-button">
+          <span className="services-button" onClick={() => toggleTab(2)}>
             View More
             <i className="uil uil-arrow-right services-button-icon"></i>
             <div className="services-modal"></div>
           </span>
 
-          <div className="services-modal">
+          <div
+            className={
+              toggleState === 2
+                ? 'services-modal active-modal'
+                : 'services-modal'
+            }
+          >
             <div className="services-modal-content">
-              <i className="uil uil-times services-modal-close"></i>
+              <i
+                className="uil uil-times services-modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
 
               <h3 className="Services-modal-tile">Ui/Ux Designer</h3>
               <p className="services-modal-description">
@@ -164,15 +182,24 @@ const Services = () => {
             </h3>
           </div>
 
-          <span className="services-button">
+          <span className="services-button" onClick={() => toggleTab(3)}>
             View More
             <i className="uil uil-arrow-right services-button-icon"></i>
             <div className="services-modal"></div>
           </span>
 
-          <div className="services-modal">
+          <div
+            className={
+              toggleState === 3
+                ? 'services-modal active-modal'
+                : 'services-modal'
+            }
+          >
             <div className="services-modal-content">
-              <i className="uil uil-times services-modal-close"></i>
+              <i
+                className="uil uil-times services-modal-close"
+                onClick={() => toggleTab(0)}
+              ></i>
 
               <h3 className="Services-modal-tile">Visual Designer</h3>
               <p className="services-modal-description">
