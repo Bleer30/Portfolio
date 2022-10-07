@@ -4,14 +4,14 @@ import './Layout.css';
 
 const Layout = () => {
   const location = useLocation();
-  const [Toggle, show] = useState(false);
+  const [Toggle, showMenu] = useState(false);
   return (
     <>
       <header className="header">
         <nav className="nav container">
           <h1 className="nav__logo">Bleer Rodriguez B.</h1>
 
-          <div className={Toggle ? 'nav__menu show-mwnu' : 'nav__menu'}>
+          <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
             <ul className="nav__list grid">
               <li className="nav__item">
                 <NavLink to="/home" className="nav__link active-link">
@@ -55,8 +55,8 @@ const Layout = () => {
             ></i>
           </div>
 
-          <div className="nav-toggle" onClick={() => showMenu(!Toggle)}>
-            <i className="uil uil-apps"></i>
+          <div className="nav-toggle">
+            <i className="uil uil-apps" onClick={() => showMenu(!Toggle)}></i>
           </div>
         </nav>
       </header>
