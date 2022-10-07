@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <header className="header">
         <nav className="nav container">
-          <h1 className="nav__logo">Bleer Rodriguez B.</h1>
+          <h1 className="nav__logo">Bleer</h1>
 
           <div className={Toggle ? 'nav__menu show-menu' : 'nav__menu'}>
             <ul className="nav__list grid">

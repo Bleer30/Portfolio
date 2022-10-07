@@ -6,15 +6,13 @@ import Data from './Data';
 const Home = () => {
   return (
     <section className="home section" id="home">
-      <div className="home-container container">
-        <div className="home-content">
-          <div className="home-content">
-            <Social />
+      <div className="home-container container grid">
+        <div className="home-content grid">
+          <Social />
 
-            <img src="./images/evangelion.png" alt="" className="home-img" />
+          <div className="home-img"></div>
 
-            <Data />
-          </div>
+          <Data />
         </div>
       </div>
     </section>

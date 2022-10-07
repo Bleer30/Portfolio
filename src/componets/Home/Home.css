@@ -1,56 +1,158 @@
 .home-content {
-    display: flex;
+    grid-template-columns: 116px repeat(2, 1fr);
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
-    column-gap: 5rem;
-    justify-content: start;
 }
 
-
 .home-social {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: max-content;
     row-gap: 1rem;
 }
 
 .home-social-icon {
     font-size: 1.25rem;
-    color:black;
+    color: var(--title-color);
 }
 
 .home-social-icon:hover {
-    color:blue;
+    color: var(--title-color-dark);
 }
 
 .home-title {
-    font-size: 3rem;
-    margin-bottom: 0.25rem;
+    font-size: 2.7rem;
+    margin-bottom: var(--mb-0-25);
 }
 
-.home-subtitle {
+.home__hand {
+    width: 38px;
+    height: 38px;
+    margin-left: 0.4rem;
+}
+
+.home-subtitle  {
     position: relative;
-    font-size: 1rem;
-    padding-right: 5.4rem;
-    font-weight: normal;
-    margin-bottom: 1rem;
+    font-size: var(--h3-font-size);
+    padding-left: 5.4rem;
+    font-weight: var(--font-normal);
+    margin-bottom: var(--mb-1);
+}
+
+.home-subtitle::before {
+    content: '';
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background-color: var(--text-color);
+    left: 0;
+    top: 1rem;
+}
+
+.home-description {
+    max-width: 400px;
+    margin-bottom: var(--mb-3);
 }
 
 .home-img {
+    background-image: url(../../assets/evangelion.png);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    box-shadow: inset 0 0 0 9px rgb(255, 255, 255 / 30%);
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 30%);
     order: 1;
-    width: 350px;
-    height: 350px;
+    justify-self: center;
+    width: 300px;
+    height: 300px;
+    animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
-.button {
-    background-color: black;
-    border: 2px solid black;
-    border-radius: 10%;
-    color: #fff;
-    text-decoration: none;
-    width: 100px;
-    height: 20px;
-    text-align: center;
+@keyframes profile_animate {
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50%{
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
 }
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .home-content {
+        grid-template-columns: 100px repeat(2, 1rf);
+        column-gap: 1.25rem;
+    }
+
+    .home__hand {
+        width: 26px;
+        height: 26px;
+    }
+
+    .home-subtitle {
+        padding-left: 3.75rem;
+        margin-bottom: var(--mb-1);
+    }
+
+    .home-subtitle::before {
+        width: 42px;
+        top: 0.8rem;
+    }
+
+    .home-description{
+        max-width: initial;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .home-img{
+        width: 250px;
+        height: 250px;
+        box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (max-width: 768px) {
+    .home-content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+    }
+
+    .home-img {
+        order: initial;
+        justify-self: initial;
+    }
+
+    .home-data {
+        grid-column: 1/3;
+    }
+
+    .home-img {
+        box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
+        width: 200px;
+        height: 200px;
+    }
+
+    .home-scroll {
+        display: none;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+    .home-img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .home__hand {
+        width: 22px;
+        height: 22px;
+    }
+  }
+  
