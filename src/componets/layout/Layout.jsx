@@ -37,7 +37,7 @@ const Layout = () => {
               </li>
 
               <li className="nav__item">
-                <NavLink to="/resume" className="nav__link">
+                <NavLink to="/portfolio" className="nav__link">
                   <i className="uil uil-scenery nav__icon"></i> Portfolio
                 </NavLink>
               </li>

@@ -7,7 +7,7 @@ import Home from './componets/Home/Home';
 import About from './componets/About/About';
 import Skills from './componets/Skills/Skills';
 import Services from './componets/services/Services';
-import Resume from './componets/Portafolio/Resume';
+import Portfolio from './componets/Portfolio/Portfolio';
 import Contact from './componets/Contact/Contact';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>
