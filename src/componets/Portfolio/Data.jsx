@@ -20,7 +20,7 @@ export const projectsData = [
     id: 3,
     image: work3,
     title: 'Brand desing',
-    category: 'design',
+    category: 'desing',
   },
   {
     id: 4,
