@@ -13,7 +13,7 @@ const Contact = () => {
 
           <div className="contact-info">
             <div className="contant-card">
-              <i class="bx bx-mail-send contact-card-icon"></i>
+              <i className="bx bx-mail-send contact-card-icon"></i>
 
               <h3 className="contact-card-title">Email</h3>
               <span className="contact-card-data">stif2001@gmail.com</span>
@@ -24,10 +24,10 @@ const Contact = () => {
             </div>
 
             <div className="contant-card">
-              <i class="bx bxl-whatsapp contact-card-icon"></i>
+              <i className="bx bxl-whatsapp contact-card-icon"></i>
 
               <h3 className="contact-card-title">Whatsapp</h3>
-              <span className="contact-card-data">999-888-777</span>
+              <span className="contact-card-data">506-7217-8378</span>
               <a href="" className="contact-button">
                 Write me{' '}
                 <i className="bx bx-right-arrow-alt contact-button-icon"></i>
@@ -35,10 +35,10 @@ const Contact = () => {
             </div>
 
             <div className="contant-card">
-              <i class="bx bxl-messenger contact-card-icon"></i>
+              <i className="bx bxl-messenger contact-card-icon"></i>
 
               <h3 className="contact-card-title">Messenger</h3>
-              <span className="contact-card-data">user.fb123</span>
+              <span className="contact-card-data">user.Bleer</span>
               <a href="" className="contact-button">
                 Write me{' '}
                 <i className="bx bx-right-arrow-alt contact-button-icon"></i>

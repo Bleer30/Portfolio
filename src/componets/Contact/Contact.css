@@ -101,6 +101,7 @@
     font-size: var(--small-font-size);
     padding: 0.25rem;
     background-color: var(--body-color);
+    border-radius: 10px;
     z-index: 10;
 }
 
