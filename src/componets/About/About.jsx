@@ -2,6 +2,7 @@ import React from 'react';
 import './About.css';
 import AboutImg from '../../assets/evangelion.png';
 import Info from './Info';
+import CV from '../../assets/Curriculum.pdf';
 
 const About = () => {
   return (
@@ -20,7 +21,7 @@ const About = () => {
             developer in Costa Rica.
           </p>
 
-          <a href="#curriculum" className="button button--flex">
+          <a download="" href={CV} className="button button--flex">
             Download CV
             <svg
               className="button__icon"
