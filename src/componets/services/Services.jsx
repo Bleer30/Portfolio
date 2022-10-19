@@ -45,8 +45,8 @@ const Services = () => {
                 Product <br /> Designer
               </h3>
               <p className="services-modal-description">
-                Service with more 3 years of experience.Providing quality work
-                to clients and companies.
+                Service with more than 3 months of experience. Providing quality
+                work to clients and companies.
               </p>
 
               <ul className="services-modal-services grid">
@@ -79,15 +79,6 @@ const Services = () => {
                   <i className="uil uil-check-circle services-modal-icon"></i>
                   <p className="services-modal-info">
                     I position your company brand.
-                  </p>
-                </li>
-              </ul>
-
-              <ul className="services-modal-services grid">
-                <li className="services-modal-service">
-                  <i className="uil uil-check-circle services-modal-icon"></i>
-                  <p className="services-modal-info">
-                    Design and mockups of products for companies.
                   </p>
                 </li>
               </ul>
@@ -124,8 +115,8 @@ const Services = () => {
 
               <h3 className="Services-modal-tile">Ui/Ux Designer</h3>
               <p className="services-modal-description">
-                Service with more 3 years of experience.Providing quality work
-                to clients and companies.
+                Service with more than 3 months of experience. Providing quality
+                work to clients and companies.
               </p>
 
               <ul className="services-modal-services grid">
@@ -158,15 +149,6 @@ const Services = () => {
                   <i className="uil uil-check-circle services-modal-icon"></i>
                   <p className="services-modal-info">
                     I position your company brand.
-                  </p>
-                </li>
-              </ul>
-
-              <ul className="services-modal-services grid">
-                <li className="services-modal-service">
-                  <i className="uil uil-check-circle services-modal-icon"></i>
-                  <p className="services-modal-info">
-                    Design and mockups of products for companies.
                   </p>
                 </li>
               </ul>
@@ -203,8 +185,8 @@ const Services = () => {
 
               <h3 className="Services-modal-tile">Visual Designer</h3>
               <p className="services-modal-description">
-                Service with more 3 years of experience.Providing quality work
-                to clients and companies.
+                Service with more than 3 months of experience. Providing quality
+                work to clients and companies.
               </p>
 
               <ul className="services-modal-services grid">
@@ -237,15 +219,6 @@ const Services = () => {
                   <i className="uil uil-check-circle services-modal-icon"></i>
                   <p className="services-modal-info">
                     I position your company brand.
-                  </p>
-                </li>
-              </ul>
-
-              <ul className="services-modal-services grid">
-                <li className="services-modal-service">
-                  <i className="uil uil-check-circle services-modal-icon"></i>
-                  <p className="services-modal-info">
-                    Design and mockups of products for companies.
                   </p>
                 </li>
               </ul>
