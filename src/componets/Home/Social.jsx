@@ -10,7 +10,7 @@ const Social = () => {
       </a>
 
       <a
-        href="https://twitter.com/bleer30"
+        href="https://twitter.com/StifRodriguez"
         className="home-social-icon"
         target="_blank"
       >
