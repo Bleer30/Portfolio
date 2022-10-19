@@ -1,7 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = e => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_4cc8lkc',
+      'template_xmin9ui',
+      form.current,
+      'QbGFC6H8Mg53YJ0TV',
+    );
+    e.target.reset();
+  };
+
   return (
     <section className="contact section" id="contact">
       <h2 className="section-title">Get in touch</h2>
@@ -17,7 +32,10 @@ const Contact = () => {
 
               <h3 className="contact-card-title">Email</h3>
               <span className="contact-card-data">stif2001@gmail.com</span>
-              <a href="stif2001@gmail.com" className="contact-button">
+              <a
+                href="mailto:examplemail@gmail.com.com"
+                className="contact-button"
+              >
                 Write me{' '}
                 <i className="bx bx-mail-send bx-right-arrow-alt contact-button-icon"></i>
               </a>
@@ -28,7 +46,10 @@ const Contact = () => {
 
               <h3 className="contact-card-title">Whatsapp</h3>
               <span className="contact-card-data">506-7217-8378</span>
-              <a href="" className="contact-button">
+              <a
+                href="https://api.whatsapp.com/send?phone=50672178378&text=Hello, more information!"
+                className="contact-button"
+              >
                 Write me{' '}
                 <i className="bx bx-right-arrow-alt contact-button-icon"></i>
               </a>
@@ -39,7 +60,7 @@ const Contact = () => {
 
               <h3 className="contact-card-title">Messenger</h3>
               <span className="contact-card-data">user.Bleer</span>
-              <a href="" className="contact-button">
+              <a href="https://m.me/crypticalcoder" className="contact-button">
                 Write me{' '}
                 <i className="bx bx-right-arrow-alt contact-button-icon"></i>
               </a>
@@ -50,7 +71,7 @@ const Contact = () => {
         <div className="contact-content">
           <h3 className="contact-title">Write me your project</h3>
 
-          <form className="contact-form">
+          <form ref={form} onSubmit={sendEmail} className="contact-form">
             <div className="contact-form-div">
               <label className="contact-form-tag">Name</label>
               <input
