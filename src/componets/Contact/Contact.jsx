@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import swal from 'sweetalert';
 import './Contact.css';
 
 const Contact = () => {
@@ -15,6 +16,15 @@ const Contact = () => {
       'QbGFC6H8Mg53YJ0TV',
     );
     e.target.reset();
+    alert();
+  };
+
+  const alert = () => {
+    swal({
+      title: 'The mail was sent successfully',
+      text: 'I will review your proposal and reply as quickly as possible!',
+      icon: 'success',
+    });
   };
 
   return (
@@ -59,8 +69,8 @@ const Contact = () => {
               <i className="bx bxl-messenger contact-card-icon"></i>
 
               <h3 className="contact-card-title">Messenger</h3>
-              <span className="contact-card-data">user.Bleer</span>
-              <a href="https://m.me/crypticalcoder" className="contact-button">
+              <span className="contact-card-data">Bleer Rodriguez</span>
+              <a href="https://m.me/bleer.rodriguez" className="contact-button">
                 Write me{' '}
                 <i className="bx bx-right-arrow-alt contact-button-icon"></i>
               </a>
@@ -79,6 +89,7 @@ const Contact = () => {
                 name="name"
                 className="contact-form-input"
                 placeholder="Insert your name"
+                required
               />
             </div>
 
@@ -89,6 +100,7 @@ const Contact = () => {
                 name="email"
                 className="contact-form-input"
                 placeholder="Insert your email"
+                required
               />
             </div>
 
@@ -100,6 +112,7 @@ const Contact = () => {
                 rows="10"
                 className="contact-form-input"
                 placeholder="Write your project"
+                required
               ></textarea>
             </div>
 
