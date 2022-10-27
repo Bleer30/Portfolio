@@ -30,7 +30,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills-name">Python</h3>
-              <span className="skills-level">Intermediante</span>
+              <span className="skills-level">Basic</span>
             </div>
           </div>
         </div>
@@ -49,7 +49,7 @@ const Backend = () => {
 
             <div>
               <h3 className="skills-name">Firebase</h3>
-              <span className="skills-level">Intermediante</span>
+              <span className="skills-level">Basic</span>
             </div>
           </div>
         </div>
