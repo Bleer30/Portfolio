@@ -83,10 +83,7 @@ textarea {
 }
 
 body {
-  background: -webkit-linear-gradient(left, #50a3a2 0%, #78cc6d 100%);
-  background: -moz-linear-gradient(left, #50a3a2 0%, #78cc6d 100%);
-  background: -o-linear-gradient(left, #50a3a2 0%, #78cc6d 100%);
-  background: linear-gradient(to right, #50a3a2 0%, #78cc6d 100%); 
+  background: white;
   color: var(--text-color);
 }
 
