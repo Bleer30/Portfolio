@@ -55,7 +55,7 @@
 }
 
 .home-img {
-    background-image: url(../../assets/evangelion.png);
+    background-image: url(/assets/me.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
